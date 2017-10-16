@@ -26,6 +26,9 @@ public class ClassName{
             
                 
             for (File listOfFile : listOfFiles) {
+                
+                
+                //read file
                 if(listOfFile==null) break;
                 
                 String URL = listOfFile.toString();
