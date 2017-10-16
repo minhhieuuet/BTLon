@@ -5,6 +5,7 @@
  */
 package de1;
 
+import java.io.File;
 import java.lang.reflect.Field;
 import java.lang.reflect.Method;
 
@@ -25,8 +26,12 @@ public class DumpMethods {
         String[] result=new String[100];
         String arg="";
         try {
+            File folder = new File("f:/File");
+           File[] listOfFiles = folder.listFiles();
+           
             Class c = DumpMethods.class;
             Method[] m = c.getDeclaredMethods();
+            Class[] n=c.getDeclaredClasses();
             Field[] f = c.getFields();
             for (int i = 0; i < m.length; i++)
             {

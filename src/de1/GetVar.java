@@ -15,6 +15,7 @@ import java.lang.reflect.Method;
 public class GetVar {
      public static String[] getVar()
     {
+        
         Class c = DumpMethods.class;
         String[] result=new String[100];
         String arg="";
